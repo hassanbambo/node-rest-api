@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const usersRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
 const PORT = process.env.PORT;
-const mongoDBUri = 'mongodb+srv://worduphassan:IRnqcWHHopACIYBb@cluster0.pnsvj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const mongoDBUri = process.env.db_url;
 
 app.use(express.json()); // Middleware to Parse JSON requests 
 
